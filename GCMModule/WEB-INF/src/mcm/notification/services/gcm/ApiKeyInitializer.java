@@ -43,7 +43,7 @@ public class ApiKeyInitializer implements ServletContextListener {
     logger.info("Reading " + PATH + " from resources (probably from " +
         "WEB-INF/classes");
     //String key = getKey();
-    String key = "AIzaSyC1SyaON2K5sRVtPSgP0UxinqFFfSGy4cI";
+    String key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
     event.getServletContext().setAttribute(ATTRIBUTE_ACCESS_KEY, key);
   }
 
