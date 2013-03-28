@@ -1,0 +1,8 @@
+jar cvf ./gcmwar.war ./GCMModule/
+
+
+scp -i /home/huber/Desktop/TechnicalInformation/AmazonInformation/HuberFlores/huber_satish.pem -r ./gcmwar.war ubuntu@ec2-184-73-70-92.compute-1.amazonaws.com:/home/ubuntu/
+
+ssh -i /home/huber/Desktop/TechnicalInformation/AmazonInformation/HuberFlores/huber_satish.pem ubuntu@ec2-184-73-70-92.compute-1.amazonaws.com
+
+
