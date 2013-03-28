@@ -1,8 +1,10 @@
+
+
+
 jar cvf ./gcmwar.war ./GCMModule/
 
+scp -i pk-name-key.pem -r ./gcmwar.war ubuntu@ec2-xxx-xxx-xxx-xxx.compute-1.amazonaws.com:/home/ubuntu/
 
-scp -i /home/huber/Desktop/TechnicalInformation/AmazonInformation/HuberFlores/huber_satish.pem -r ./gcmwar.war ubuntu@ec2-184-73-70-92.compute-1.amazonaws.com:/home/ubuntu/
-
-ssh -i /home/huber/Desktop/TechnicalInformation/AmazonInformation/HuberFlores/huber_satish.pem ubuntu@ec2-184-73-70-92.compute-1.amazonaws.com
+ssh -i pk-name-key.pem ubuntu@ec2-xxx-xxx-xxx-xxx.compute-1.amazonaws.com
 
 
