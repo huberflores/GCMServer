@@ -10,7 +10,7 @@ Installation
 - Download the code
 
 ```xml
-git clone https://github.com/huberflores/GCMServer.git
+$ git clone https://github.com/huberflores/GCMServer.git
 ````
 
 - Set the API key obtained in the Google API console in the ApiKeyInitializer.java file
