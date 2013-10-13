@@ -34,7 +34,7 @@ $ mv GCM-mavenized-server.war /usr/local/tomcat/apache-tomcat-7.0.35/webapps/
 ````
 
 ```xml
-/etc/init.d/tomcat start
+$ /etc/init.d/tomcat start
 ````
 
 Once online, you can register your device in the server. Registration happens to
