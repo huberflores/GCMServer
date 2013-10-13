@@ -46,7 +46,7 @@ http://ec2-xx-xxx-x-x.compute-1.amazonaws.com:8080/GCM-mavenized-server
 FAQ
 ----
 
-Since gcm-server.jar is not provided in a specific maven repository, a local maven repository that includes the library should be created.
+Since gcm-server.jar is not provided in a specific maven repository, a local maven repository that includes the library should be created. Alternatively, gcm-server repository can be establish using the following [link](https://github.com/slorber/gcm-server-repository)
 
 ```xml
 mvn install:install-file -Dfile=/home/huber/.m2/repository/gcm-server-1.0.3.jar -DgroupId=com.google.android.gcm.server -DartifactId=gcm-server -Dversion=1.0.3 -Dpackaging=jar
@@ -70,9 +70,7 @@ mvn install:install-file -Dfile=/home/huber/.m2/repository/gcm-server-1.0.3.jar 
 [INFO] ------------------------------------------------------------------------
 ````
 
-
 Dependecy is defined in pom.xml as
-
 ```xml
 <dependency>
     <groupId>com.google.android.gcm.server</groupId>
