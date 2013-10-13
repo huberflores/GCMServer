@@ -22,15 +22,15 @@ $ mvn clean install
 - Locate war file in the WebServer (e.g. Tomcat). The example shows how to do it for Amazon.
 
 ```xml
-scp -i /home/huber/...KeyPath.../pk-huber_key.pem -r ./GCM-mavenized-server.war ubuntu@ec2-xx-xxx-x-x.compute-1.amazonaws.com:/home/ubuntu/
+$ scp -i /home/huber/...KeyPath.../pk-huber_key.pem -r ./GCM-mavenized-server.war ubuntu@ec2-xx-xxx-x-x.compute-1.amazonaws.com:/home/ubuntu/
 ````
 
 ```xml
-ssh -i /home/huber/...KeyPath.../pk-huber_key.pem ubuntu@ec2-xx-xxx-x-x.compute-1.amazonaws.com
+$ ssh -i /home/huber/...KeyPath.../pk-huber_key.pem ubuntu@ec2-xx-xxx-x-x.compute-1.amazonaws.com
 ````
 
 ```xml
-mv GCM-mavenized-server.war /usr/local/tomcat/apache-tomcat-7.0.35/webapps/
+$ mv GCM-mavenized-server.war /usr/local/tomcat/apache-tomcat-7.0.35/webapps/
 ````
 
 ```xml
@@ -49,7 +49,7 @@ FAQ
 Since gcm-server.jar is not provided in a specific maven repository, a local maven repository that includes the library should be created. Alternatively, gcm-server repository can be establish using the following [link](https://github.com/slorber/gcm-server-repository)
 
 ```xml
-mvn install:install-file -Dfile=/home/huber/.m2/repository/gcm-server-1.0.3.jar -DgroupId=com.google.android.gcm.server -DartifactId=gcm-server -Dversion=1.0.3 -Dpackaging=jar
+$ mvn install:install-file -Dfile=/home/huber/.m2/repository/gcm-server-1.0.3.jar -DgroupId=com.google.android.gcm.server -DartifactId=gcm-server -Dversion=1.0.3 -Dpackaging=jar
 ````
 ```xml
 [INFO] Scanning for projects...
