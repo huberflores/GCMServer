@@ -1,5 +1,5 @@
-scp -i /home/huber/Desktop/TechnicalInformation/HuberFlores/pk-huber_satish.pem -r ./GCM-mavenized-server.war ubuntu@ec2-54-226-7-6.compute-1.amazonaws.com:/home/ubuntu/
+scp -i /home/huber/...KeyPath.../HuberFlores/pk-huber_key.pem -r ./GCM-mavenized-server.war ubuntu@ec2-xx-xxx-x-x.compute-1.amazonaws.com:/home/ubuntu/
 
-ssh -i /home/huber/Desktop/TechnicalInformation/HuberFlores/pk-huber_satish.pem ubuntu@ec2-54-226-7-6.compute-1.amazonaws.com
+ssh -i /home/huber/...KeyPath.../HuberFlores/pk-huber_key.pem ubuntu@ec2-xx-xxx-x-x.compute-1.amazonaws.com
 
 
