@@ -1,5 +1,5 @@
-GCM Web Server 
-==============
+GCM Web Server (mavenized) 
+==========================
 
 Google Cloud Messaging (GCM) server side for Android.
 
