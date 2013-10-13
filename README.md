@@ -29,4 +29,19 @@ scp -i /home/huber/...KeyPath.../pk-huber_key.pem -r ./GCM-mavenized-server.war 
 ssh -i /home/huber/...KeyPath.../pk-huber_key.pem ubuntu@ec2-xx-xxx-x-x.compute-1.amazonaws.com
 ````
 
-Once online, you can register you device to the server.
+```xml
+mv GCM-mavenized-server.war /usr/local/tomcat/apache-tomcat-7.0.35/webapps/
+````
+
+```xml
+/etc/init.d/tomcat start
+````
+
+Once online, you can register you device to the server. Registration happens to
+
+```xml
+http://ec2-xx-xxx-x-x.compute-1.amazonaws.com:8080/GCM-mavenized-server
+````
+
+
+
